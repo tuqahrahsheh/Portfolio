@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #2774a7;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.main{
+    width: 100%;
+    text-align: center;
+    padding: 200px 150px;
+    align-items: center;
+    background: url(last.jfif) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+ }
+ .main-btn{
+    color: aliceblue;
+    background-color: rgb(63, 63, 146);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: .9375em 2.187em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: .7s ease;
+
+}
+.main-btn:hover {
+    background-color: rgb(198, 208, 217);
+    transform: scale(1.1em);
+}
+.imgg{
+    display:inline-flex;
+    
+    height: 200px;
+    width: 100px;
+    padding: -25%;
+    margin-left: 1000px;
+    margin-top: -100px;
+    
+}
+
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive menu */
+.menu-icon {
+  display: none;
+}
+
+nav {
+  display: block;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  input[type="checkbox"]:checked ~ nav ul {
+    display: block;
+  }
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+form label,
+form textarea,
+form input[type="text"],
+form input[type="email"],
+form button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 1s linear;
+  /* transition: background-color 0.3s ease; */
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+    
+    display: flex;
+
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  /* text-align: center; */
+  justify-content: space-between;
+  height: 300px;
+    width: 100%;
+}
+.footer-title{
+    font-size: 20px;
+    font-weight: bold;
+    /* text-align: center; */
+    margin:200px ;
+    height: 300px;
+    width: 100%;
+    }
+
+
+.footer-title span{
+    color: blue;
+}
+    .foot{
+        height: 300px;
+        width: 100%;
+    padding: 25px;
+    }
+   
+
+/* Animation */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#about,
+#projects,
+#contact {
+  animation: slideInFromTop 1s ease;
+}
+
+/* Media query for screens with max width of 425px */
+@media screen and (max-width: 425px) {
+  header {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+    <h1>Tuqa Hrahsheh</h1>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="main" style=" min-height: 100vh; width: 100%;">
+    <div>
+        <div class="imgg">
+        <img src="imageone.jpg">
+    </div>
+    <h2> Tuqa Hrahsheh <br> <span>Full Stack Developer</span></h2>
+    <h3>Full Stack developer proficient in both front-end and back-end web technologies.</h3>
+    <a href="https://github.com/tuqahrahsheh" class="main-btn">View My Work</a>
+    </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>My name is Tuqaa Harahsheh, I'm 24 years old. I graduated from the Jordan University of Science and Technology with a major in Healthcare Management and Policy in 2022.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Project</h2>
+    <div class="project">
+      <h3>Evaluate the importance of the communication specialist in health care organization</h3>
+      <p>Graduation project completed
+        It was entitled an Evaluate the importance of the communication specialist in health care organization and its role on the quality of communication
+    </p>
+    </div>
+    <div class="project">
+      <h2>Internships</h2>
+      <p> 1.Volunteered as a Data Entry Coordinator at a COVID-19 Vaccination Center<br>
+        2.Participation in the program  "Ana Osharek"<br>
+        3.Contributed to the archive department at the 'Just for JUST' newspaper</p>
+    </div>
+    <div class="project">
+        <h2>Training & Certificats</h2>
+        <p>1.Trainee in the Department of Quality, Entry, Human Resources and Medical Records<br>
+            2.Trainee at Jerash University in the medical unit/ health insurance and medical records<br>
+            3.I obtained a QA (Manual & Automation) certificate from Sumaia Technical University.</p>
+      </div>
+    
+  </section>
+
+  
+  
+  <footer class="footer">
+    <section id="contact">
+        <h2>Contact Me</h2>
+        
+            <div class="button">
+            <a href="https://github.com/tuqahrahsheh">
+                <button>Github</button></a>
+                <a href="https://www.linkedin.com/in/tuqa-harahsheh-869914219/">
+                    <button>Linkedin</button></a>
+                <a href="tuqahrahsheh00@gmail.com">
+                  <button>Email</button></a>
+                    </div>
+      </section>
+ <p class="footer-title">&copy;<span>TuqaHrahsheh</span> All rights reserved.</p>
+
+<div class="foot">
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10554.07002090195!2d35.8503068806137!3d32.55416782168615!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7715f2c2e7ab%3A0x51755840c8ddbefd!2sOrange%20Digital%20Village%20Irbid!5e0!3m2!1sar!2sjo!4v1716229747864!5m2!1sar!2sjo"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div> -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d53808.15542144317!2d35.849669!3d32.552586!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7715f2c2e7ab%3A0x51755840c8ddbefd!2sOrange%20Digital%20Village%20Irbid!5e0!3m2!1sar!2sjo!4v1716234865311!5m2!1sar!2sjo" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</
+  </footer>
+  <!-- Link Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
